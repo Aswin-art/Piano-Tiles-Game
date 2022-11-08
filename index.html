@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Tiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-wrapper">
+            <div class="game-logo">
+                <div class="logo">
+                    <h1>PIANO</h1>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-content">
+                    <div class="heading-content instruction">
+                        <h2>Instructions</h2>
+                    </div>
+                    <div class="instructions-content menu-content">
+                        <ol>
+                            <li>Use "DFJK" key to hit the tiles</li>
+                            <li>Select audio to play</li>
+                            <li>Press "Esc" to pause the game</li>
+                            <li>Input your name and click play button</li>
+                        </ol>
+                    </div>
+                    <div class="heading-content select-audio">
+                        <h2>Select Audio</h2>
+                    </div>
+                    <div class="select-audio-content">
+                        <select name="audio-list" id="audio-list" class="audio-list">
+                            <option selected disabled value="">Select Music to Play</option>
+                            <option value="calm_peacefull">Calm & Peacefull</option>
+                        </select>
+                    </div>
+                    <div class="heading-content">
+                        <h2>Input Name</h2>
+                    </div>
+                    <div class="input-name-content">
+                        <input type="text" class="input-name" placeholder="Input your name...">
+                        <button class="btn-play">Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pause-wrapper">
+            <div class="pause">
+                <div class="pause-content">
+                    <h1>PAUSE</h1>
+                    <p>Press "Esc" to play the game</p>
+                </div>
+            </div>
+        </div>
+        <div class="gameover-wrapper">
+            <div class="gameover">
+                <div class="gameover-content">
+                    <h1>GAMEOVER</h1>
+                    <p>Your total score is <span class="score-gameover">0</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="game-wrapper">
+            <div class="game-info">
+                <div class="player-name">
+                    <h2 class="player">Player</h2>
+                </div>
+                <div class="player-score">
+                    <h3>Score: <span class="score-game">0%</span></h3>
+                </div>
+            </div>
+            <canvas id="game"></canvas>
+            <div class="game-timer">
+                <div class="timer-wrapper">
+                    <p class="timer">00:00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
