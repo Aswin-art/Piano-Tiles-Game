@@ -327,7 +327,7 @@ let gameover = false
 let score = 0
 let tilePassed = 0
 let tileHit = 0
-const audio = new Audio('./assets/audio/calm_music.mp3')
+const audio = new Audio()
 
 let spawnTileInterval = 0
 
@@ -383,6 +383,7 @@ function play(){
         gameEl.style.display = 'flex'
         pause = false
         animate()
+        audio.src = './assets/audio/' + localStorage.getItem('music') + '.mp3'
         audio.play()
         playerName.innerHTML = inputName.value
     }else{
